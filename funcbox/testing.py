@@ -87,7 +87,6 @@ def evaluate_test_cases(function, test_cases: list[dict], verbose: bool = True, 
 
 if __name__ == '__main__':
     def sample_function(a, b):
-        l = [i for i in range(1000000)]
         print(f"The sum of {a} and {b} is {int(a) + int(b)}")
         return a + b
 
@@ -97,4 +96,4 @@ if __name__ == '__main__':
         {'input': {'a': 10, 'b': 5}, 'output': 15},
     ]
 
-    evaluate_test_cases(sample_function, test_cases, verbose=False, time_unit='us')
+    evaluate_test_cases(sample_function, test_cases, verbose=True, time_unit='us')
