@@ -96,4 +96,4 @@ if __name__ == '__main__':
         {'input': {'a': 10, 'b': 5}, 'output': 15},
     ]
 
-    evaluate_test_cases(sample_function, test_cases, verbose=True, time_unit='us')
+    evaluate_test_cases(sample_function, test_cases, verbose=False, time_unit='us')
